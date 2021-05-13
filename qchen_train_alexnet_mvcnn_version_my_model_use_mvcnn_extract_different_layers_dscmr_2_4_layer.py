@@ -388,7 +388,7 @@ if __name__ == '__main__':
             loss=loss_view1+loss_view2
 
             #alpha=0.01
-            alpha=10
+            alpha=1
             #c_loss = center_loss(view1_predict.data + view2_predict.data, labels) * alpha + loss+0.1*(loss_mse_dgcnn+loss_mse_img)
             c_loss = center_loss(torch.cat((view1_feature,view2_feature),dim=1), labels) * alpha + loss# + 0.1 * (
                         #loss_mse_dgcnn )
