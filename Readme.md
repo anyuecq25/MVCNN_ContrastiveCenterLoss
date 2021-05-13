@@ -43,7 +43,7 @@ Pretrained Model: [multi-view part(MVCNN)](https://drive.google.com/file/d/1dZG7
     ``` python qchen_train_alexnet_mvcnn_version_my_model_use_mvcnn_extract_different_layers_dscmr_2_4_layer.py```
 
 + If validate the performance of our pretrained model:
-    Download our pretrained model  from <a href='http://computer.swu.edu.cn/r/cms/computer/computer/images/mvcnn_different_layer_test_2_4_dscmr_18.ckpt.pth'>mvcnn_different_layer_test_2_4_dscmr_18.ckpt.pth</a>.Unzip it, and store it in the same directory as codes.
+    Download our pretrained model  from <a href='http://computer.swu.edu.cn/r/cms/computer/computer/images/mvcnn_different_layer_test_2_4_dscmr_18.ckpt.zip'>mvcnn_different_layer_test_2_4_dscmr_18.ckpt.pth</a>.Unzip it, and store it in the same directory as codes.
     ```
     python qchen_test_alexnet_mvcnn_version_my_model_use_mvcnn_extract_different_layers_dscmr_2_4_layer.py
     ```
