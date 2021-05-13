@@ -29,6 +29,9 @@ Pretrained Model: [multi-view part(MVCNN)](https://drive.google.com/file/d/1dZG7
 ### Usage
 + Download data 12_ModelNet40.zip to ./data/
     ```
+    mkdir -p data/pc
+    #mkdir -p data/12_ModelNet40
+    mv 12_ModelNet40.zip ./data/
     unzip 12_ModelNet40.zip
 
     ```
