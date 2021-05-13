@@ -114,7 +114,7 @@ class view_data(Dataset):
         #         #                     std=[0.229, 0.224, 0.225])
         #     ])
 
-        view_root='/memdisk/12_ModelNet40'
+        #view_root='/memdisk/12_ModelNet40'
         if status==STATUS_TRAIN:
             jpg_list = glob(osp.join(view_root, '*', 'train', '*.jpg'))
         else:
