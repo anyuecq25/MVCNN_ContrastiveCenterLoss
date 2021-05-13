@@ -53,7 +53,7 @@ Pretrained Model: [multi-view part(MVCNN)](https://drive.google.com/file/d/1dZG7
     map_F2 at epoch : 0.9001967923785649<br>
     map_F4 at epoch : 0.8870950024416322<br>
     mean class accuracy at epoch 999: all 91.24797406807131  @F2 91.00486223662885 @F4 90.55915721231767<br>
-
+<img src='http://computer.swu.edu.cn/r/cms/computer/computer/images/pr_result.png'>
 
 ### License
 Our code is released under MIT License (see LICENSE file for details).
