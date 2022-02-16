@@ -2,7 +2,7 @@
 
 ### Multi-view 3D model retrieval based on enhanced detail features with contrastive center loss
 
-This is the code for the paper submit to Multimedia Tools and Applications(MTAP).<br>
+This is the code for the paper https://doi.org/10.1007/s11042-022-12281-9 published in  Multimedia Tools and Applications(MTAP) Feb 15,2022.<br>
 **Qiang CHEN<sup>1</sup>, Yinong CHEN\*<sup>2</sup><br>**
 1.College of Computer and Information Science, Southwest University, Chongqing, 400175, China<br>
 2.School of Computing, Informatics and Decision Systems Engineering, Arizona State University, Tempe, AZ, USA<br>
@@ -12,12 +12,14 @@ Created by Qiang Chen, Yinong Chen Southwest University and Arizona State Univer
 
 
 ### Introduction
-One of the major challenges in view-based 3D model retrieval is that the pose of the models is not uniform, resulting in the need for rotational matching between views when calculating the distance between two models, which is computationally intensive and the features obtained are poorly discriminative. MVCNN (Multi-View Convolutional Neural Networks) achieved higher performance while avoiding the rotation matching problem. However, the element-wise maximum operation across the views is lead to the loss of detail information. In this paper, we use a deep cross-modal learning method to treat the features of different views as different modal features. We select two of the views as the input of the deep multimodal learning method. By combining the proposed method with an improved contrastive center loss, we can align the features in the same subspace, and thus, we obtain the fused feature. The training of the proposed CNN (Convolutional Neural Networks) model is based on the existing MVCNN pre-trained model, which takes only 18 epochs to converge. The proposed method avoids explicitly learning the weights for fusion of different view features, while incorporating more details into the 3D model’s final descriptor. Experimental results show that the proposed method obtains 90.07% in terms of mAP (mean average precision) using only the MVCNN as the backbone, which is comparable to the feature fusion algorithm PVRNet (Point-View Relation Neural Network) and much higher than the mAP of MVCNN (80.2%). The experimental results demonstrated the effectiveness of the proposed method.<br>
+In recent years, 3D model retrieval has become a hot topic. With the development of deep learning technology, many state-of-the-art deep learning based multi-view 3D model retrieval algorithms have emerged. One of the major challenges in view-based 3D model retrieval is how to achieve rotation invariant. MVCNN (Multi-View Convolutional Neural Networks) achieving higher performance while maintaining rotation invariant. However, the element-wise maximum operation across the views leads to the loss of detailed information. To address this problem, in this paper, we use a deep cross-modal learning method to treat the features of different views as different modal features. First, we select two of the views as the input of the deep multimodal learning method. Then we combine the proposed method with an improved contrastive center loss, so that we can align the features in the same subspace and obtain a higher discriminative fused feature. Experimental results show that the training of the proposed CNN (Convolutional Neural Networks) model is based on the existing MVCNN pre-trained model, which takes only 18 epochs to converge, and it obtains 90.07% in terms of mAP (mean average precision) using only the MVCNN as the backbone, which is comparable to the feature fusion algorithm PVRNet (Point-View Relation Neural Network) and much higher than the mAP of MVCNN (80.2%). The experimental results demonstrated that the proposed method avoids explicitly learning the weights for fusion of different view features, while incorporating more details into the 3D model’s final descriptor can improve the retrieval results.<br>
 
 This code is heavily borrowed from PVRNet https://github.com/iMoonLab/PVRNet
 
 ### Citation
-Our work is under review, if you find our work useful in your research, please contact us. Thanks.
+If you find our work useful in your research, please cite our paper:
+https://doi.org/10.1007/s11042-022-12281-9
+
 
 ### Configuration
 Code is tested under the environment of Pytorch 1.0.0, Python 3.6.7 and CUDA 10.0 on Ubuntu 16.04.
